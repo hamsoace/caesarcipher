@@ -1,10 +1,8 @@
-package Models;
-
 import java.util.Scanner;
 
 public class Caesar {
 
-    public void encrypt(String messageText, int changeChar){
+    public static void main(String[] args){
         String letterBig = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String letterSmall = letterBig.toLowerCase();
 
@@ -14,6 +12,7 @@ public class Caesar {
         int length = message.length();
         System.out.println("Enter the key: ");
         int key = scan.nextInt();
+        System.out.println("The encrypted message is:  ");
 
         for(int i = 0; i< length; i++){
             for (int j = 0; j< 26; j++){
@@ -26,8 +25,7 @@ public class Caesar {
             }
 
         }
-        System.out.println("The encrypted message is:  ");
-
+        System.out.println();
 
   }
 }
